@@ -1,7 +1,26 @@
-body{
-    background-color: olive;
+/* styles.css */
+
+body {
+    margin: 0; /* Supprime les marges par défaut */
+    height: 100vh; /* Prend toute la hauteur de la fenêtre */
+    display: flex; /* Utilise flexbox pour centrer */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    background: linear-gradient(270deg, #ff5733, #33c1ff, #85ff33, #ff33a1);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite; /* Animation du dégradé */
 }
 
-h1{
+h1 {
     background-color: violet;
+    padding: 20px; /* Ajoute un peu d'espace autour du texte */
+    border-radius: 10px; /* Arrondit les coins */
+    text-align: center; /* Centre le texte */
+}
+
+/* Animation pour le dégradé */
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
