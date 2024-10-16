@@ -1,26 +1,75 @@
-/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-    margin: 0; /* Supprime les marges par défaut */
-    height: 100vh; /* Prend toute la hauteur de la fenêtre */
-    display: flex; /* Utilise flexbox pour centrer */
-    justify-content: center; /* Centre horizontalement */
-    align-items: center; /* Centre verticalement */
-    background: linear-gradient(270deg, #ff5733, #33c1ff, #85ff33, #ff33a1);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite; /* Animation du dégradé */
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
 }
 
-h1 {
-    background-color: violet;
-    padding: 20px; /* Ajoute un peu d'espace autour du texte */
-    border-radius: 10px; /* Arrondit les coins */
-    text-align: center; /* Centre le texte */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
 }
 
-/* Animation pour le dégradé */
-@keyframes gradient {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.hero {
+    background-color: #5c6bc0;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.hero p {
+    margin-bottom: 30px;
+    font-size: 1.2em;
+}
+
+.btn {
+    background-color: #ff5722;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #e64a19;
+}
+
+.content {
+    padding: 40px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 30px;
 }
